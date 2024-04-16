@@ -52,8 +52,28 @@ namespace Luhns_Algorithm
 
                 // If a multiple of 10, card is valid
                 return (sum % 10 == 0);
-            } catch (Exception) {
+            }
+            catch (Exception)
+            {
                 return false;
+            }
+        }
+            //Add another class to this project, call the validate card method, pass it a string,
+            //and it will tell you if it is a valid credit card number
+            //after it works, commitm and then go to github and do a pull request
+            // New class for credit card validation
+    class CreditCardValidator
+        {
+            public static bool IsValidCreditCard(string cardNumber)
+            {
+                // Implement your credit card validation logic here
+                // You can use the ValidateCard method from the Program class
+                // or create a new validation algorithm
+                // Return true if valid, false otherwise
+                return ValidateCard(cardNumber);
+
+
+
             }
         }
     }
